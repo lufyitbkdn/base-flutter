@@ -1,5 +1,6 @@
 import 'package:mywo/core/di/locator.dart';
 import 'package:mywo/services/services.dart';
+import 'package:mywo/services/stream/stream.dart';
 
 class BaseException implements Exception {
   BaseException({
@@ -13,8 +14,8 @@ class BaseException implements Exception {
 
   String? message;
   int? statusCode;
-  late final ExceptionStream? exceptionStreamService;
-  late final ExceptionStream _exceptionStreamService;
+  late final StreamSubject<Exception>? exceptionStreamService;
+  late final StreamSubject<Exception> _exceptionStreamService;
 }
 
 class ConnectivityException extends BaseException {

@@ -1,24 +1,21 @@
 
-import 'package:mywo/core/exception/exception.dart';
 import 'package:mywo/models/user/user.dart';
-import 'package:mywo/services/stream/stream_repository.dart';
+import 'package:mywo/services/stream/stream_subject.dart';
 
 class StreamService {
   StreamService() {
     _init();
   }
 
-  late UserStream _userStream;
+  late StreamSubject<User> _userStream;
+  StreamSubject<User> get userStream => _userStream;
 
-  UserStream get userStream => _userStream;
-
-  late ExceptionStream _exceptionStream;
-
-  ExceptionStream get exceptionStream => _exceptionStream;
+  late StreamSubject<Exception> _exceptionStream;
+  StreamSubject<Exception> get exceptionStream => _exceptionStream;
 
   void _init() {
-    _userStream = UserStream();
-    _exceptionStream = ExceptionStream();
+    _userStream = StreamSubject<User>();
+    _exceptionStream = StreamSubject<Exception>();
   }
 
 
@@ -34,6 +31,3 @@ class StreamService {
   }
 }
 
-
-class UserStream extends StreamSubjectRepository<User> {}
-class ExceptionStream extends StreamSubjectRepository<BaseException> {}
