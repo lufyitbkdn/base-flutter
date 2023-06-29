@@ -1,7 +1,7 @@
 # Generate project 🚀
-- Replace {{PROJECT_NAME}} by your project name (no spacing)
-- Replace {{APP_NAME}} by your app name
-- Replace {{PACKAGE_NAME}} your bundle identifier
+- Replace all {{PROJECT_NAME}} by your project name (no spacing)
+- Replace all {{APP_NAME}} by your app name
+- Replace all {{PACKAGE_NAME}} your bundle identifier
 Then remove this section
 
 ---
@@ -9,6 +9,7 @@ Then remove this section
 
 # Getting Started 🚀
 - Extract flutter_gen.zip to .dart_tool folder
+- Run "flutter analyze" before commiting code
 
 This project contains 3 flavors:
 
@@ -29,7 +30,7 @@ $ flutter run --flavor staging --target lib/main_staging.dart --build-number=$BU
 $ flutter run --flavor production --target lib/main_production.dart --build-number=$BUILD_NUMBER --build-name=$APPVERSION
 ```
 
-{{APP_NAME}}works on iOS & Android._
+{{APP_NAME}} works on iOS & Android._
 
 ---
 
