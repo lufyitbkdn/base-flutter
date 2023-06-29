@@ -1,0 +1,4 @@
+enum StatusBar {
+  light,
+  dark,
+}
