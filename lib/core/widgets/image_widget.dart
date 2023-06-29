@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:{{PROJECT_NAME}}/extensions/widget_extensions.dart';
-import 'package:{{PROJECT_NAME}}/theme/color/app_colors.dart';
+import 'package:mywo/extensions/widget_extensions.dart';
+import 'package:mywo/theme/color/app_colors.dart';
 
 Widget svgWidget(
   String? imagePath, {

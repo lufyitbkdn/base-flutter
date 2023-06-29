@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
+import 'package:mywo/core/core.dart';
 
 abstract class HttpInterface {
   Future<R?> get<T extends IBaseModel<T>, R>(

@@ -4,7 +4,9 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:{{PROJECT_NAME}}/core/di/locator.dart';
+import 'package:mywo/app.dart';
+import 'package:mywo/constants/constants.dart';
+import 'package:mywo/core/di/locator.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
@@ -28,7 +30,11 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   Bloc.observer = AppBlocObserver();
   await setupLocator();
 
-  await builder();
+  FlavoursConfiguration builder() => FlavoursConfiguration(
+    appflavour: BuildConstants.getCurrentEnvironment,
+    child: const App(),
+  );
+  runApp(builder());
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);

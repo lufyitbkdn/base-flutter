@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/models/response_message/response_message.dart';
-import 'package:{{PROJECT_NAME}}/models/user/login_response.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:mywo/constants/constants.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/models/response_message/response_message.dart';
+import 'package:mywo/models/user/login_response.dart';
+import 'package:mywo/services/services.dart';
 
 abstract class UserRepositoryInterface {
   Future<LoginResponse?> login(String email, String pin);

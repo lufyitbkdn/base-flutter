@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
-import 'package:{{PROJECT_NAME}}/core/enum/enum.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/core/enum/enum.dart';
+import 'package:mywo/theme/theme.dart';
 
 extension WidgetPresentation on Widget {
   /// Make Status bar light

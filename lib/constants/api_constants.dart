@@ -1,4 +1,4 @@
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
+import 'package:mywo/constants/constants.dart';
 
 class EndPoints {
   static String get loginPath =>

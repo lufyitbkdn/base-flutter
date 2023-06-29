@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/theme/theme.dart';
 
 class PaddingSpace extends StatelessWidget {
   const PaddingSpace({

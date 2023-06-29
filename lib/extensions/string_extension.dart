@@ -1,5 +1,5 @@
 import 'package:intl/intl.dart';
-import 'package:{{PROJECT_NAME}}/helper/date_helpers.dart';
+import 'package:mywo/helper/date_helpers.dart';
 
 extension StringExtension on String? {
   String? toCapitalize() {

@@ -1,4 +1,4 @@
-import 'package:{{PROJECT_NAME}}/core/enum/app_flavours.dart';
+import 'package:mywo/core/enum/app_flavours.dart';
 
 class BuildConstants {
   static AppFlavours _environment = AppFlavours.development;

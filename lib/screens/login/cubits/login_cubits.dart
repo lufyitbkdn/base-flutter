@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/helper/helpers.dart';
-import 'package:{{PROJECT_NAME}}/helper/ui_helper.dart';
-import 'package:{{PROJECT_NAME}}/repository/user/user_repository.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/helper/helpers.dart';
+import 'package:mywo/helper/ui_helper.dart';
+import 'package:mywo/repository/user/user_repository.dart';
 
 part 'login_state.dart';
 

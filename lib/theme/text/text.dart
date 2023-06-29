@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/theme/theme.dart';
 
 const TextStyle textStyle = TextStyle(
   fontFamily: 'SFPro',

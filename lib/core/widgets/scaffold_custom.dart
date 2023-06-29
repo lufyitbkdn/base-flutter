@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:{{PROJECT_NAME}}/assets.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/extensions/extensions.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/assets.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/extensions/extensions.dart';
+import 'package:mywo/theme/theme.dart';
 
 class ScaffoldCustom extends StatelessWidget {
   const ScaffoldCustom({

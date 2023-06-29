@@ -1,7 +1,7 @@
 
-import 'package:{{PROJECT_NAME}}/core/exception/exception.dart';
-import 'package:{{PROJECT_NAME}}/models/user/user.dart';
-import 'package:{{PROJECT_NAME}}/services/stream/stream_repository.dart';
+import 'package:mywo/core/exception/exception.dart';
+import 'package:mywo/models/user/user.dart';
+import 'package:mywo/services/stream/stream_repository.dart';
 
 class StreamService {
   StreamService() {

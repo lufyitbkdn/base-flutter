@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:mywo/constants/constants.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/services/services.dart';
 
 abstract class AuthenticationServiceInterface {
   void disposeStream();

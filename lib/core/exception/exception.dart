@@ -1,5 +1,5 @@
-import 'package:{{PROJECT_NAME}}/core/di/locator.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:mywo/core/di/locator.dart';
+import 'package:mywo/services/services.dart';
 
 class BaseException implements Exception {
   BaseException({

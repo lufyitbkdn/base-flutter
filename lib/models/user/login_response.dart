@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/models/user/user.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/models/user/user.dart';
 
 part 'login_response.g.dart';
 

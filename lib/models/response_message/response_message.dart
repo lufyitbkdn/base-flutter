@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
+import 'package:mywo/core/core.dart';
 
 part 'response_message.g.dart';
 

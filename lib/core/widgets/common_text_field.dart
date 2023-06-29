@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/theme/theme.dart';
 
 class CommonTextField extends StatefulWidget {
   CommonTextField({

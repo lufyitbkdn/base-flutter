@@ -1,14 +1,4 @@
-# Generate project 🚀
-- Replace {{PROJECT_NAME}} by your project name (no spacing)
-- Replace {{APP_NAME}} by your app name
-- Replace {{PACKAGE_NAME}} your bundle identifier
-Then remove this section
-
----
-
-
 # Getting Started 🚀
-- Extract flutter_gen.zip to .dart_tool folder
 
 This project contains 3 flavors:
 
@@ -20,16 +10,16 @@ To run the desired flavor either use the launch configuration in VSCode/Android 
 
 ```sh
 # Development
-$ flutter run --flavor development --target lib/main_development.dart --build-number=$BUILD_NUMBER --build-name=$APPVERSION
+$ flutter run --flavor development --target lib/main_development.dart
 
 # Staging
-$ flutter run --flavor staging --target lib/main_staging.dart --build-number=$BUILD_NUMBER --build-name=$APPVERSION
+$ flutter run --flavor staging --target lib/main_staging.dart
 
 # Production
-$ flutter run --flavor production --target lib/main_production.dart --build-number=$BUILD_NUMBER --build-name=$APPVERSION
+$ flutter run --flavor production --target lib/main_production.dart
 ```
 
-{{APP_NAME}}works on iOS & Android._
+_\*My wo works on iOS & Android._
 
 ---
 

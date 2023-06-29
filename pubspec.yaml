@@ -1,6 +1,6 @@
-name: {{PROJECT_NAME}}
-description: {{APP_NAME}}
-version: 1.0.0
+name: mywo
+description: MyWo
+version: 1.0.0+1
 publish_to: none
 
 environment:
@@ -62,7 +62,6 @@ flutter:
   assets:
     - assets/
     - assets/images/
-    - assets/svg/
 
   fonts:
     - family: SFPro

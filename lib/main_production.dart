@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
 
-import 'package:{{PROJECT_NAME}}/app.dart';
-import 'package:{{PROJECT_NAME}}/bootstrap.dart';
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
-import 'package:{{PROJECT_NAME}}/core/enum/app_flavours.dart';
+import 'package:mywo/app.dart';
+import 'package:mywo/bootstrap.dart';
+import 'package:mywo/constants/constants.dart';
+import 'package:mywo/core/enum/app_flavours.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

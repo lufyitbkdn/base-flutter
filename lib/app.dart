@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:get/get.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/screens/login/login_screen.dart';
-import 'package:{{PROJECT_NAME}}/services/navigator_service/navigation_service.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
-import 'package:{{PROJECT_NAME}}/theme/text/text.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/screens/login/login_screen.dart';
+import 'package:mywo/services/navigator_service/navigation_service.dart';
+import 'package:mywo/services/services.dart';
+import 'package:mywo/theme/text/text.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -18,7 +18,7 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     return FlutterSizer(
       builder: (context, orientation, deviceType) => GetMaterialApp(
         navigatorKey: locator<NavigationService>().navigatorKey,

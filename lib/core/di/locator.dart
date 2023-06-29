@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:event_bus/event_bus.dart';
 import 'package:get_it/get_it.dart';
-import 'package:{{PROJECT_NAME}}/core/log/logger.dart';
-import 'package:{{PROJECT_NAME}}/repository/user/user_repository.dart';
-import 'package:{{PROJECT_NAME}}/services/navigator_service/navigation_service.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:mywo/core/log/logger.dart';
+import 'package:mywo/repository/user/user_repository.dart';
+import 'package:mywo/services/navigator_service/navigation_service.dart';
+import 'package:mywo/services/services.dart';
 // import 'package:realm/realm.dart';
 
 GetIt locator = GetIt.instance;

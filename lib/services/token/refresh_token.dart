@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/models/user/login_response.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/models/user/login_response.dart';
+import 'package:mywo/services/services.dart';
 
 class RefreshTokenService {
   RefreshTokenService({

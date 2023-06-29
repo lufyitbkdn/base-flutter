@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
-import 'package:{{PROJECT_NAME}}/core/widgets/capped_progress_indicator.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/core/widgets/capped_progress_indicator.dart';
+import 'package:mywo/theme/theme.dart';
 
 class FullScreenLoadingIndicator extends StatelessWidget {
   const FullScreenLoadingIndicator({

@@ -1,4 +1,4 @@
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
+import 'package:mywo/constants/constants.dart';
 
 String getPrivateFileUrl(String path) =>
     path.isEmpty ? '' : '${BuildConstants.getBaseURl}/api$path';

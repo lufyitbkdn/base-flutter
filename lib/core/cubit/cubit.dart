@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
+import 'package:mywo/core/core.dart';
 
 mixin EmitAsync<T> on Cubit<T> {
   Future<T> emitAsync(T state) async {

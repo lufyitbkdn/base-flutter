@@ -1,7 +1,7 @@
 import 'package:intl/intl.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/extensions/extensions.dart';
-import 'package:{{PROJECT_NAME}}/helper/date_helpers.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/extensions/extensions.dart';
+import 'package:mywo/helper/date_helpers.dart';
 import 'package:sprintf/sprintf.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;

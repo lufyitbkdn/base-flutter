@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/core/widgets/common_text_field.dart';
-import 'package:{{PROJECT_NAME}}/core/widgets/scaffold_custom.dart';
-import 'package:{{PROJECT_NAME}}/extensions/extensions.dart';
-import 'package:{{PROJECT_NAME}}/helper/ui_helper.dart';
-import 'package:{{PROJECT_NAME}}/screens/login/cubits/login_cubits.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/core/widgets/common_text_field.dart';
+import 'package:mywo/core/widgets/scaffold_custom.dart';
+import 'package:mywo/extensions/extensions.dart';
+import 'package:mywo/helper/ui_helper.dart';
+import 'package:mywo/screens/login/cubits/login_cubits.dart';
+import 'package:mywo/theme/theme.dart';
 
 class LoginScreenRoute extends StatelessWidget {
   const LoginScreenRoute({super.key});
@@ -18,7 +18,7 @@ class LoginScreenRoute extends StatelessWidget {
         loginBlocProvider(),
       ],
       child: const _LoginScreen(),
-    ).darkStatusBar();
+    );
   }
 }
 

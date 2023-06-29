@@ -1,4 +1,4 @@
-import 'package:{{PROJECT_NAME}}/services/stream/abstract_stream.dart';
+import 'package:mywo/services/stream/abstract_stream.dart';
 import 'package:rxdart/rxdart.dart';
 
 class StreamSubjectRepository<T> extends AppStreamSubjectInterface<T> {

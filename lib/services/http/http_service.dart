@@ -3,9 +3,9 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:mywo/constants/constants.dart';
+import 'package:mywo/core/core.dart';
+import 'package:mywo/services/services.dart';
 
 class HttpService extends HttpInterface {
   HttpService({

@@ -1,5 +1,5 @@
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
-import 'package:{{PROJECT_NAME}}/core/core.dart';
+import 'package:mywo/constants/constants.dart';
+import 'package:mywo/core/core.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class ICache {

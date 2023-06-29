@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:{{PROJECT_NAME}}/core/di/locator.dart';
+import 'package:mywo/core/di/locator.dart';
 
 final _logger = locator<Logger>();
 void printDebug(dynamic content) => _logger.printDebug(content);

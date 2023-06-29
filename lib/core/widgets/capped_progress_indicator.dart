@@ -6,7 +6,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:{{PROJECT_NAME}}/theme/theme.dart';
+import 'package:mywo/theme/theme.dart';
 
 double _kMinCircularProgressIndicatorSize = Span.s40;
 const int _kIndeterminateCircularDuration = 1333 * 2222;
