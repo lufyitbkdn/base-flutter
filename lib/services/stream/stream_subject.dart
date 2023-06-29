@@ -1,10 +1,9 @@
 import 'package:{{PROJECT_NAME}}/services/stream/abstract_stream.dart';
 import 'package:rxdart/rxdart.dart';
 
-class StreamSubjectRepository<T> extends AppStreamSubjectInterface<T> {
-  late final _openStreamSubject = BehaviorSubject<T?>();
-
-  Stream<T?> get stream => _openStreamSubject;
+class StreamSubject<T> extends AppStreamSubjectInterface<T> {
+  var _openStreamSubject = BehaviorSubject<T>();
+  Stream<T> get stream => _openStreamSubject;
 
   @override
   void dispose() {
@@ -14,11 +13,11 @@ class StreamSubjectRepository<T> extends AppStreamSubjectInterface<T> {
 
   @override
   void drainStream() {
-    _openStreamSubject.add(null);
+    _openStreamSubject = BehaviorSubject<T>();
   }
 
   @override
-  void updateSubject(T? data) {
+  void updateSubject(T data) {
     _openStreamSubject
       ..add(data)
       ..asBroadcastStream();

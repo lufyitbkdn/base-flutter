@@ -1,5 +1,7 @@
+
 import 'package:{{PROJECT_NAME}}/core/di/locator.dart';
 import 'package:{{PROJECT_NAME}}/services/services.dart';
+import 'package:{{PROJECT_NAME}}/services/stream/stream.dart';
 
 class BaseException implements Exception {
   BaseException({
@@ -13,8 +15,8 @@ class BaseException implements Exception {
 
   String? message;
   int? statusCode;
-  late final ExceptionStream? exceptionStreamService;
-  late final ExceptionStream _exceptionStreamService;
+  late final StreamSubject<Exception>? exceptionStreamService;
+  late final StreamSubject<Exception> _exceptionStreamService;
 }
 
 class ConnectivityException extends BaseException {
@@ -29,9 +31,9 @@ class AuthException extends BaseException {
     String? message,
     int? statusCode,
   }) : super(
-          message: message ?? 'Token Expired. Please log in again.',
-          statusCode: statusCode ?? 401,
-        ) {
+    message: message ?? 'Token Expired. Please log in again.',
+    statusCode: statusCode ?? 401,
+  ) {
     _exceptionStreamService.updateSubject(this);
   }
 }
@@ -41,3 +43,4 @@ class NotificationException extends BaseException {
     _exceptionStreamService.updateSubject(this);
   }
 }
+

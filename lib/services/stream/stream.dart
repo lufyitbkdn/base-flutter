@@ -1,1 +1,1 @@
-export 'stream_repository.dart';
+export 'stream_subject.dart';
