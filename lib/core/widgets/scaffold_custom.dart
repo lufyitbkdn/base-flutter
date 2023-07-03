@@ -40,29 +40,32 @@ class ScaffoldCustom extends StatelessWidget {
       onTap: () {
         context.hideKeyBoard();
       },
-      child: Stack(
-        children: [
-          if (background != null) background!,
-          Scaffold(
-            backgroundColor:
-                background != null ? Colors.transparent : Colors.white,
-            appBar:
-                showAppBar ? (appBarWidget ?? _displayAppbar(context)) : null,
-            extendBody: true,
-            extendBodyBehindAppBar: true,
-            body: Padding(
-              padding: useDefaultPadding
-                  ? EdgeInsets.symmetric(
-                      horizontal: Span.horizontalPadding,
-                      vertical: Span.verticalPadding,
-                    )
-                  : EdgeInsets.zero,
-              child: SafeArea(
-                child: body,
+      child: ColoredBox(
+        color: backgroundColor,
+        child: Stack(
+          children: [
+            if (background != null) background!,
+            Scaffold(
+              backgroundColor:
+                  background != null ? Colors.transparent : Colors.white,
+              appBar:
+                  showAppBar ? (appBarWidget ?? _displayAppbar(context)) : null,
+              extendBody: true,
+              extendBodyBehindAppBar: true,
+              body: Padding(
+                padding: useDefaultPadding
+                    ? EdgeInsets.symmetric(
+                        horizontal: Span.horizontalPadding,
+                        vertical: Span.verticalPadding,
+                      )
+                    : EdgeInsets.zero,
+                child: SafeArea(
+                  child: body,
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -50,7 +50,7 @@ packages:
     source: hosted
     version: "2.4.2"
   assets_gen:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: assets_gen
       sha256: "8af92bbd3be9c18efa7ce83fe22065d4048e980af8945c55c2b0cd411ca0ae1e"

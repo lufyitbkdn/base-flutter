@@ -16,9 +16,10 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
     return FlutterSizer(
       builder: (context, orientation, deviceType) => GetMaterialApp(
         navigatorKey: locator<NavigationService>().navigatorKey,

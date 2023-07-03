@@ -66,7 +66,7 @@ class Span {
   static final s160 = 160.0.dp;
   static final s168 = 168.0.dp;
   static final s178 = 178.0.dp;
-  static final s182 = 182.0.dp;
+  static final s188 = 188.0.dp;
   static final s190 = 190.0.dp;
   static final s216 = 216.0.dp;
   static final s200 = 200.0.dp;

@@ -27,4 +27,5 @@ class AppColors {
   static const alert100 = Color(0xffFEF3C7);
   static const alert800 = Color(0xff92400E);
   static const blackTransparent40 = Color(0x44202020);
+  static const appColor = Color(0xff00B2D4);
 }
