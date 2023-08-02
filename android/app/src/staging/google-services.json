@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "785158513621",
+    "project_id": "civstart",
+    "storage_bucket": "civstart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785158513621:android:71b81bf9d7e1ec341b135c",
+        "android_client_info": {
+          "package_name": "com.theprojectfactory.civstart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785158513621-kc3k8s9oq6m8vqrr5km9tamohumq7svi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWrzvW6KddeChcuAhRa4lHYJNh6LX5aq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785158513621-kc3k8s9oq6m8vqrr5km9tamohumq7svi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "785158513621-27a9timbofgh3rnkhnniiebbial21bbf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.theprojectfactory.civstart.stg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785158513621:android:e5389b9fee1d20ca1b135c",
+        "android_client_info": {
+          "package_name": "com.theprojectfactory.civstart.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785158513621-kc3k8s9oq6m8vqrr5km9tamohumq7svi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWrzvW6KddeChcuAhRa4lHYJNh6LX5aq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785158513621-kc3k8s9oq6m8vqrr5km9tamohumq7svi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "785158513621-27a9timbofgh3rnkhnniiebbial21bbf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.theprojectfactory.civstart.stg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785158513621:android:04628ccebdcef1551b135c",
+        "android_client_info": {
+          "package_name": "com.theprojectfactory.civstart.stg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785158513621-kc3k8s9oq6m8vqrr5km9tamohumq7svi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWrzvW6KddeChcuAhRa4lHYJNh6LX5aq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785158513621-kc3k8s9oq6m8vqrr5km9tamohumq7svi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "785158513621-27a9timbofgh3rnkhnniiebbial21bbf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.theprojectfactory.civstart.stg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

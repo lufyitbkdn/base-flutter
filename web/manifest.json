@@ -1,11 +1,11 @@
 {
-    "name": "Impakt",
-    "short_name": "Impakt",
+    "name": "CivStart",
+    "short_name": "CivStart",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Description",
+    "description": "Veteran Career Advice",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -1,0 +1,140 @@
+{
+  "project_info": {
+    "project_number": "850460223932",
+    "project_id": "mywo-b609c",
+    "storage_bucket": "mywo-b609c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850460223932:android:fd7bd808929a5992ac63b9",
+        "android_client_info": {
+          "package_name": "com.mywo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850460223932-76h32u6ah4nc17q6hkmv28dlhcmkl2ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo",
+            "certificate_hash": "ffab365e613c4379e2c52f0cd1da738e604f2a7a"
+          }
+        },
+        {
+          "client_id": "850460223932-7mp6o0o27lq1as1qkmjqkfhm97ljl32f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo",
+            "certificate_hash": "e409ef180f9fcb95c10ddbfd3dbc7f7ec0235bf7"
+          }
+        },
+        {
+          "client_id": "850460223932-iucuhhmt4mhqoqsh6iq6p7mg74gj4eqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo",
+            "certificate_hash": "d633af53b5be3f6754597b6a0626b25917db7355"
+          }
+        },
+        {
+          "client_id": "850460223932-jvuk8oqrm0m36j8h10abvhorn35ertt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo",
+            "certificate_hash": "62d4de10c52d0f1d75f6c1c8bd71e1d83656e280"
+          }
+        },
+        {
+          "client_id": "850460223932-2kog5oq3ss16l75ebvmotdb1uvbv0275.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw4hms02bvwsHmusCM8seUuhXKS_3jRDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850460223932-2ebot51nfd6spp2sh8ti5qmgo4ejjng0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "850460223932-36tvdtsn4afd29poktdc87inp7njc5a2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mywo",
+                "app_store_id": "6450990821"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850460223932:android:30b6ea2a11a0aefdac63b9",
+        "android_client_info": {
+          "package_name": "com.mywo.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850460223932-7nj0cd4d9rhsn2tvrjou34dh4iq3kuf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo.dev",
+            "certificate_hash": "e409ef180f9fcb95c10ddbfd3dbc7f7ec0235bf7"
+          }
+        },
+        {
+          "client_id": "850460223932-7uqpcvcm96vctt3ur9lcgk3n0t0h6r7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo.dev",
+            "certificate_hash": "d633af53b5be3f6754597b6a0626b25917db7355"
+          }
+        },
+        {
+          "client_id": "850460223932-or1jasdvdk58aqcuk7ao19rnkvtbgk83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mywo.dev",
+            "certificate_hash": "62d4de10c52d0f1d75f6c1c8bd71e1d83656e280"
+          }
+        },
+        {
+          "client_id": "850460223932-2kog5oq3ss16l75ebvmotdb1uvbv0275.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw4hms02bvwsHmusCM8seUuhXKS_3jRDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850460223932-2ebot51nfd6spp2sh8ti5qmgo4ejjng0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "850460223932-36tvdtsn4afd29poktdc87inp7njc5a2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mywo.dev",
+                "app_store_id": "6450990821"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
