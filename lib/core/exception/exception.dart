@@ -1,7 +1,6 @@
-
-import 'package:{{PROJECT_NAME}}/core/di/locator.dart';
-import 'package:{{PROJECT_NAME}}/services/services.dart';
-import 'package:{{PROJECT_NAME}}/services/stream/stream.dart';
+import 'package:mywo/core/di/locator.dart';
+import 'package:mywo/services/services.dart';
+import 'package:mywo/services/stream/stream.dart';
 
 class BaseException implements Exception {
   BaseException({
@@ -43,4 +42,3 @@ class NotificationException extends BaseException {
     _exceptionStreamService.updateSubject(this);
   }
 }
-
