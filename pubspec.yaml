@@ -1,96 +1,86 @@
-name: {{PROJECT_NAME}}
-description: {{APP_NAME}}
-version: 1.0.0
+name: civstart
+description: App for helping Army veterans find jobs in the civilian market.
+version: 1.0.1+28
 publish_to: none
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.13.4 <4.0.0"
 
 dependencies:
-  animated_snack_bar: ^0.3.1
-  auto_size_text: ^3.0.0
+  async: ^2.11.0
   bloc: ^8.1.2
-  cached_network_image:
-    path: ./cache_image/cached_network_image
-  connectivity_plus: ^4.0.2
-  dio: ^5.3.2
-  equatable: ^2.0.5
-  event_bus: ^2.0.0
-  file: any
+  collection: ^1.17.1
+  cupertino_icons: ^1.0.6
+  firebase_analytics: ^10.4.5
+  firebase_core: ^2.15.1
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.3
-  flutter_constraintlayout: ^1.7.0-stable
-  flutter_html: ^3.0.0-alpha.6
-  flutter_localizations:
-    sdk: flutter
-  flutter_native_splash: ^2.3.2
-  flutter_sizer: ^1.0.5
+  flutter_secure_storage: ^9.0.0
   flutter_svg: ^2.0.7
-  get: ^4.6.5
-  get_it: ^7.6.0
+  freezed_annotation: 2.4.1
+  get_it: ^7.6.4
+  go_router: ^10.1.2
+  html: ^0.15.4
   http: ^1.1.0
-  intl: ^0.18.0
   json_annotation: ^4.8.1
-  numberpicker: ^2.1.2
-  open_file: ^3.3.2
-  path_provider: ^2.1.0
-  percent_indicator: ^4.2.3
-  pretty_dio_logger: ^1.3.1
-  provider: ^6.0.5
-  realm: ^1.4.0
-  rxdart: ^0.27.7
-  shared_preferences: ^2.2.0
-  shimmer: ^3.0.0
-  sprintf: ^7.0.0
-  timezone: ^0.9.2
-  url_launcher: ^6.1.11
-  retrofit: ^4.0.1
-  logger: any
+  logging: ^1.2.0
+  lottie: ^2.6.0
+  meta: ^1.9.1
+  sentry_flutter: ^7.9.0
+  sentry_logging: ^7.9.0
+  shared_preferences: ^2.2.1
+  sliver_tools: ^0.2.12
+  url_launcher: ^6.1.14
+  visibility_detector: ^0.4.0+2
 
 dev_dependencies:
   assets_gen: ^1.5.0
   bloc_test: ^9.1.4
   build_runner: ^2.4.6
+  build_verify: ^3.1.0
   flutter_test:
     sdk: flutter
+  freezed: 2.4.1
   json_serializable: ^6.7.1
-  mocktail: ^1.0.0
-  very_good_analysis: ^5.0.0+1
-  retrofit_generator: ^7.0.8
+  mockito: ^5.4.2
+  sentry_dart_plugin: ^1.6.0
+  very_good_analysis: ^5.1.0
 
 flutter:
   uses-material-design: true
-  generate: true
-  assets:
-    - assets/
-    - assets/images/
-    - assets/svg/
-
   fonts:
-    - family: SFPro
+    - family: Poppins
       fonts:
-        - asset: assets/fonts/SF-Pro-Display-Regular.ttf
-        - asset: assets/fonts/SF-Pro-Display-Thin.ttf
-          weight: 100
-        - asset: assets/fonts/SF-Pro-Display-Ultralight.ttf
-          weight: 200
-        - asset: assets/fonts/SF-Pro-Display-Light.ttf
-          weight: 300
-        - asset: assets/fonts/SF-Pro-Display-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/SF-Pro-Display-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/SF-Pro-Display-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/SF-Pro-Display-Bold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Black.ttf
+        - asset: assets/fonts/Poppins/Poppins-BlackItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
           weight: 700
-        - asset: assets/fonts/SF-Pro-Display-Heavy.ttf
-          weight: 800
-        - asset: assets/fonts/SF-Pro-Display-Black.ttf
-          weight: 900
+        - asset: assets/fonts/Poppins/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-ExtraLight.ttf
+        - asset: assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins/Poppins-Light.ttf
+          style: normal
+          weight: 300
+        - asset: assets/fonts/Poppins/Poppins-LightItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf
+        - asset: assets/fonts/Poppins/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins/Poppins-ThinItalic.ttf
+  assets:
+    - assets/animations/
+    - assets/fonts/Poppins/OFL.txt
+    - assets/images/
 
-flutter_native_splash:
-  #  color: "#F9FBFC"
-  background_image: assets/images/bg_splash.png
-  image: assets/splash_logo.png
+sentry:
+  project: civstart-flutter
+  org: miroma-project-factory

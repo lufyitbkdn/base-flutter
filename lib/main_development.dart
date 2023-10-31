@@ -1,17 +1,13 @@
-import 'package:flutter/widgets.dart';
+import 'package:civstart/app/app.dart';
+import 'package:civstart/bootstrap.dart';
+import 'package:civstart/firebase/firebase_options_development.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-import 'package:{{PROJECT_NAME}}/app.dart';
-import 'package:{{PROJECT_NAME}}/bootstrap.dart';
-import 'package:{{PROJECT_NAME}}/constants/constants.dart';
-import 'package:{{PROJECT_NAME}}/core/enum/app_flavours.dart';
+Future<void> main() async {
+  await bootstrap(() async {
+    await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  BuildConstants.updateEnvironment(currentEnvironment: AppFlavours.development);
-  bootstrap(
-    () => FlavoursConfiguration(
-      appflavour: BuildConstants.getCurrentEnvironment,
-      child: const App(),
-    ),
-  );
+    await DevelopmentServiceLocator().setup();
+    return const App();
+  });
 }

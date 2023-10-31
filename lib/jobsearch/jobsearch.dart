@@ -1,0 +1,15 @@
+export 'view/are_you_the_worlds_secret_page.dart';
+export 'view/before_you_begin_page.dart';
+export 'view/finishing_your_job_search_page.dart';
+export 'view/getting_in_first_page.dart';
+export 'view/interviews_page.dart';
+export 'view/jobsearch_page.dart';
+export 'view/knowledge_is_power_page.dart';
+export 'view/preparing_for_the_search_page.dart';
+export 'view/starting_your_job_search_page.dart';
+export 'view/talking_to_the_right_people_page.dart';
+export 'view/understanding_the_job_landscape_page.dart';
+export 'view/what_else_should_i_be_doing_page.dart';
+export 'view/you_ve_landed_a_role_page.dart';
+export 'view/your_cv_and_profile_page.dart';
+export 'view/your_professional_objectives_page.dart';
