@@ -1,10 +1,10 @@
 import 'package:civstart/app/app.dart';
-import 'package:civstart/check_list/check_list.dart';
-import 'package:civstart/favourites/favorites.dart';
+import 'package:civstart/feature/check_list/check_list.dart';
+import 'package:civstart/feature/favourites/favorites.dart';
+import 'package:civstart/feature/home/home.dart';
+import 'package:civstart/feature/skills/skills.dart';
+import 'package:civstart/feature/tips_and_tricks/tips_and_tricks.dart';
 import 'package:civstart/firebase/firebase.dart';
-import 'package:civstart/home/home.dart';
-import 'package:civstart/skills/skills.dart';
-import 'package:civstart/tips_and_tricks/tips_and_tricks.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -17,10 +17,10 @@ class ProductionServiceLocator {
   @mustCallSuper
   Future<void> setup() async {
     const packageName = 'com.theprojectfactory.civstart';
-    // TODO configure firebase and FirebaseAnalyticsScreenViewSender to add firebase analytics screen view event
     getIt
       ..registerSingleton(FirebaseAnalytics.instance)
-      ..registerSingleton(FirebaseAnalyticsScreenViewSender(firebaseAnalytics: getIt()))
+      ..registerSingleton(
+          FirebaseAnalyticsScreenViewSender(firebaseAnalytics: getIt()))
       ..registerSingleton(UrlLauncher())
       ..registerSingleton(
         const FlutterSecureStorage(
@@ -39,35 +39,47 @@ class ProductionServiceLocator {
     final sharedPreferences = await SharedPreferences.getInstance();
     getIt.registerSingleton(sharedPreferences);
 
-    final localStorageDataSource = LocalStorageDataSource(secureStorage: getIt(), sharedPreferences: getIt());
+    final localStorageDataSource = LocalStorageDataSource(
+        secureStorage: getIt(), sharedPreferences: getIt());
     await localStorageDataSource.init();
     getIt.registerSingleton(localStorageDataSource);
 
-    final checkListsRepository = CheckListsRepository(localStorageDataSource: getIt());
+    final checkListsRepository =
+        CheckListsRepository(localStorageDataSource: getIt());
     getIt.registerSingleton(checkListsRepository);
 
-    final afterInterviewCheckListRepository = AfterInterviewCheckListRepository(checkListsRepository: getIt());
+    final afterInterviewCheckListRepository =
+        AfterInterviewCheckListRepository(checkListsRepository: getIt());
     await afterInterviewCheckListRepository.init();
     getIt.registerSingleton(afterInterviewCheckListRepository);
 
-    final beforeInterviewCheckListRepository = BeforeInterviewCheckListRepository(checkListsRepository: getIt());
+    final beforeInterviewCheckListRepository =
+        BeforeInterviewCheckListRepository(checkListsRepository: getIt());
     await beforeInterviewCheckListRepository.init();
 
     getIt
       ..registerSingleton(beforeInterviewCheckListRepository)
       ..registerSingleton(SkillsRepository(localStorageDataSource: getIt()))
-      ..registerFactory(() => HasCompletedSkillsQuizUseCase(skillsRepository: getIt()))
-      ..registerFactory(() => MySkillsCubit(hasCompletedSkillsQuizUseCase: getIt()))
-      ..registerFactory(() => SkillsQuizCubit(hasCompletedSkillsQuizUseCase: getIt(), skillsRepository: getIt()))
-      ..registerFactory(() => SortSkillQuizResultsUseCase(skillsRepository: getIt()))
-      ..registerFactory(() => SoftSkillsCubit(sortSkillQuizResultsUseCase: getIt()))
+      ..registerFactory(
+          () => HasCompletedSkillsQuizUseCase(skillsRepository: getIt()))
+      ..registerFactory(
+          () => MySkillsCubit(hasCompletedSkillsQuizUseCase: getIt()))
+      ..registerFactory(() => SkillsQuizCubit(
+          hasCompletedSkillsQuizUseCase: getIt(), skillsRepository: getIt()))
+      ..registerFactory(
+          () => SortSkillQuizResultsUseCase(skillsRepository: getIt()))
+      ..registerFactory(
+          () => SoftSkillsCubit(sortSkillQuizResultsUseCase: getIt()))
       ..registerFactory(() => HardSkillsCubit(skillsRepository: getIt()))
       ..registerSingleton(FavouritesRepository(localStorageDataSource: getIt()))
       ..registerFactory(() => MyFavouritesCubit(favouritesRepository: getIt()))
-      ..registerFactory(() => IsFavouritedUseCase(favouritesRepository: getIt()))
+      ..registerFactory(
+          () => IsFavouritedUseCase(favouritesRepository: getIt()))
       ..registerFactory(() => HomeRepository(localStorageDataSource: getIt()))
-      ..registerFactory(() => InterviewAfterCubit(afterInterviewCheckListRepository: getIt()))
-      ..registerFactory(() => InterviewBeforeCubit(beforeInterviewCheckListRepository: getIt()));
+      ..registerFactory(
+          () => InterviewAfterCubit(afterInterviewCheckListRepository: getIt()))
+      ..registerFactory(() =>
+          InterviewBeforeCubit(beforeInterviewCheckListRepository: getIt()));
   }
 }
 
@@ -78,7 +90,8 @@ class StagingServiceLocator extends ProductionServiceLocator {
 
     getIt
       ..unregister<FirebaseAnalyticsScreenViewSender>()
-      ..registerSingleton<FirebaseAnalyticsScreenViewSender>(NoOpFirebaseAnalyticsScreenViewSender(firebaseAnalytics: getIt()));
+      ..registerSingleton<FirebaseAnalyticsScreenViewSender>(
+          NoOpFirebaseAnalyticsScreenViewSender(firebaseAnalytics: getIt()));
   }
 }
 
@@ -89,6 +102,7 @@ class DevelopmentServiceLocator extends ProductionServiceLocator {
 
     getIt
       ..unregister<FirebaseAnalyticsScreenViewSender>()
-      ..registerSingleton<FirebaseAnalyticsScreenViewSender>(NoOpFirebaseAnalyticsScreenViewSender(firebaseAnalytics: getIt()));
+      ..registerSingleton<FirebaseAnalyticsScreenViewSender>(
+          NoOpFirebaseAnalyticsScreenViewSender(firebaseAnalytics: getIt()));
   }
 }

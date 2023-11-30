@@ -56,7 +56,8 @@ class CivCard extends StatelessWidget {
                       Row(
                         children: [
                           Expanded(child: CivText.titleMedium(title)),
-                          if (actionButton != null && imageAssetName == null) actionButton,
+                          if (actionButton != null && imageAssetName == null)
+                            actionButton,
                         ],
                       ),
                       if (subtitle != null) //
@@ -67,7 +68,8 @@ class CivCard extends StatelessWidget {
                         Flexible(
                           child: child,
                         ),
-                      if (primaryButtonTitle != null || secondaryButtonTitle != null) //
+                      if (primaryButtonTitle != null ||
+                          secondaryButtonTitle != null) //
                         const SizedBox(height: Spacing.xs_8),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,

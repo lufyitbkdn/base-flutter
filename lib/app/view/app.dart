@@ -12,7 +12,8 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  final firebaseAnalyticsScreenViewSender = getIt<FirebaseAnalyticsScreenViewSender>();
+  final firebaseAnalyticsScreenViewSender =
+      getIt<FirebaseAnalyticsScreenViewSender>();
 
   /// Precaches the images and SVGs. This can be an expensive operation and should ideally be done
   /// at each screen, before it loads. We are doing it here since it makes the app development easier
@@ -21,7 +22,8 @@ class _AppState extends State<App> {
     final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
     final imageCachingFutures = assetManifest //
         .listAssets()
-        .where((assetPath) => assetPath.endsWith('.jpg') || assetPath.endsWith('.png'))
+        .where((assetPath) =>
+            assetPath.endsWith('.jpg') || assetPath.endsWith('.png'))
         .map((assetPath) async {
       final imageProvider = AssetImage(assetPath);
       await precacheImage(imageProvider, context);
@@ -40,14 +42,16 @@ class _AppState extends State<App> {
         .where((assetPath) => assetPath.endsWith('.svg'))
         .map((svgAsset) async {
       final loader = SvgAssetLoader(svgAsset);
-      await svg.cache.putIfAbsent(loader.cacheKey(null), () => loader.loadBytes(null));
+      await svg.cache
+          .putIfAbsent(loader.cacheKey(null), () => loader.loadBytes(null));
     });
 
     await Future.wait([...imageCachingFutures, ...svgCachingFutures]);
   }
 
   void sendScreenView() {
-    firebaseAnalyticsScreenViewSender.sendScreenView(router.routeInformationProvider.value.location);
+    firebaseAnalyticsScreenViewSender
+        .sendScreenView(router.routeInformationProvider.value.location);
   }
 
   @override
@@ -97,9 +101,22 @@ class _AppState extends State<App> {
         ),
         fontFamily: 'Poppins',
         textTheme: const TextTheme(
-          titleLarge: TextStyle(color: Color(0xFF1F1F1F), fontSize: 30, fontWeight: FontWeight.w700, height: 1.13, letterSpacing: -0.6),
-          titleMedium: TextStyle(color: Color(0xFF1F1F1F), fontSize: 18, fontWeight: FontWeight.w500, height: 1.44),
-          bodyMedium: TextStyle(color: Color(0xFF1F1F1F), fontSize: 15, fontWeight: FontWeight.w400, letterSpacing: -0.30),
+          titleLarge: TextStyle(
+              color: Color(0xFF1F1F1F),
+              fontSize: 30,
+              fontWeight: FontWeight.w700,
+              height: 1.13,
+              letterSpacing: -0.6),
+          titleMedium: TextStyle(
+              color: Color(0xFF1F1F1F),
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+              height: 1.44),
+          bodyMedium: TextStyle(
+              color: Color(0xFF1F1F1F),
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              letterSpacing: -0.30),
           labelMedium: TextStyle(
             color: Color(0xFF5A5A5A),
             fontSize: 12,
@@ -112,7 +129,8 @@ class _AppState extends State<App> {
           builders: {
             // This is needed to prevent InkWell animations to freeze and return animating
             // when we navigate back. See https://github.com/flutter/flutter/issues/119897
-            TargetPlatform.android: ZoomPageTransitionsBuilder(allowSnapshotting: false),
+            TargetPlatform.android:
+                ZoomPageTransitionsBuilder(allowSnapshotting: false),
             TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
             TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
           },

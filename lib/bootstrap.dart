@@ -31,7 +31,8 @@ void setupLogging() {
     }
 
     final String message;
-    final messageHeader = '${record.level.name}: ${record.loggerName} : ${record.time}: ${record.message}';
+    final messageHeader =
+        '${record.level.name}: ${record.loggerName} : ${record.time}: ${record.message}';
     if (record.level < Level.SEVERE) {
       message = messageHeader;
     } else {
@@ -61,13 +62,15 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
       WidgetsFlutterBinding.ensureInitialized();
 
-      await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+      await SystemChrome.setPreferredOrientations(
+          [DeviceOrientation.portraitUp]);
 
       Bloc.observer = const AppBlocObserver();
 
       // Add cross-flavor configuration here
       LicenseRegistry.addLicense(() async* {
-        final license = await rootBundle.loadString('assets/fonts/Poppins/OFL.txt');
+        final license =
+            await rootBundle.loadString('assets/fonts/Poppins/OFL.txt');
         yield LicenseEntryWithLineBreaks(['Poppins'], license);
       });
 

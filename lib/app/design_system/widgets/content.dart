@@ -98,7 +98,8 @@ const kContentPaddingSpacing = Spacing.m_25;
 class PaddedContent extends StatelessWidget {
   const PaddedContent({
     required this.children,
-    this.padding = const EdgeInsets.symmetric(horizontal: kContentPaddingSpacing),
+    this.padding =
+        const EdgeInsets.symmetric(horizontal: kContentPaddingSpacing),
     super.key,
   });
 

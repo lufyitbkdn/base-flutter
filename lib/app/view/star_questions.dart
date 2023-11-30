@@ -23,20 +23,21 @@ class CivStarQuestions extends StatelessWidget {
         CivListTile(
           leading: _ColoredText(text: 'A', color: CivColors.orange),
           title: 'Actions',
-          subtitle: '(What actions did you take? How do you operate? What do you do?)',
+          subtitle:
+              '(What actions did you take? How do you operate? What do you do?)',
         ),
         SizedBox(height: Spacing.s_16),
         CivListTile(
           leading: _ColoredText(text: 'R', color: CivColors.purple),
           title: 'Results',
-          subtitle: '(What business outcome did you accomplish? What was the result?)',
+          subtitle:
+              '(What business outcome did you accomplish? What was the result?)',
         ),
         SizedBox(height: Spacing.m_25),
       ],
     );
   }
 }
-
 
 class _ColoredText extends StatelessWidget {
   const _ColoredText({

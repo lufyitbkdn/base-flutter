@@ -28,8 +28,6 @@ dependencies:
   logging: ^1.2.0
   lottie: ^2.6.0
   meta: ^1.9.1
-  sentry_flutter: ^7.9.0
-  sentry_logging: ^7.9.0
   shared_preferences: ^2.2.1
   sliver_tools: ^0.2.12
   url_launcher: ^6.1.14
@@ -53,34 +51,27 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins/Poppins-Black.ttf
-        - asset: assets/fonts/Poppins/Poppins-BlackItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Poppins/Poppins-BoldItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
-        - asset: assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-ExtraLight.ttf
-        - asset: assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-Italic.ttf
-          style: italic
-        - asset: assets/fonts/Poppins/Poppins-Light.ttf
-          style: normal
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins-Light.ttf
           weight: 300
-        - asset: assets/fonts/Poppins/Poppins-LightItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Poppins/Poppins-MediumItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
-        - asset: assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf
-        - asset: assets/fonts/Poppins/Poppins-Thin.ttf
-        - asset: assets/fonts/Poppins/Poppins-ThinItalic.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
   assets:
     - assets/animations/
     - assets/fonts/Poppins/OFL.txt
     - assets/images/
 
-sentry:
-  project: civstart-flutter
-  org: miroma-project-factory

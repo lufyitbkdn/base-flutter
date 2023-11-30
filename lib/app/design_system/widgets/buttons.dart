@@ -137,7 +137,8 @@ class ListTileButton extends StatelessWidget {
           child: InkWell(
             onTap: onPressed,
             child: ListTile(
-              contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
               leading: leading,
               title: CivText.titleMedium(title),
               subtitle: subtitle != null
@@ -147,7 +148,9 @@ class ListTileButton extends StatelessWidget {
                     )
                   : null,
               trailing: Icon(
-                isExternalLink ? Icons.open_in_new : Icons.arrow_forward_ios_outlined,
+                isExternalLink
+                    ? Icons.open_in_new
+                    : Icons.arrow_forward_ios_outlined,
               ),
             ),
           ),

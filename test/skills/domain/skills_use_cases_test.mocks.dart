@@ -6,7 +6,7 @@
 import 'dart:async' as _i4;
 
 import 'package:civstart/app/app.dart' as _i2;
-import 'package:civstart/skills/skills.dart' as _i3;
+import 'package:civstart/feature/skills/skills.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint

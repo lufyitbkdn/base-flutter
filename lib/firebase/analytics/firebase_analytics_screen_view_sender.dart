@@ -32,7 +32,8 @@ class FirebaseAnalyticsScreenViewSender {
   }
 }
 
-class NoOpFirebaseAnalyticsScreenViewSender extends FirebaseAnalyticsScreenViewSender {
+class NoOpFirebaseAnalyticsScreenViewSender
+    extends FirebaseAnalyticsScreenViewSender {
   NoOpFirebaseAnalyticsScreenViewSender({required super.firebaseAnalytics});
 
   @override

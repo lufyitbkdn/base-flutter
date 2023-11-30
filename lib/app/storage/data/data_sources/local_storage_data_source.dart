@@ -16,7 +16,8 @@ class LocalStorageDataSource {
 
   /// Must be called before the local storage can be used.
   Future<void> init() async {
-    final isFirstRun = sharedPreferences.getBool(StorageKey.isFirstRun.name) ?? true;
+    final isFirstRun =
+        sharedPreferences.getBool(StorageKey.isFirstRun.name) ?? true;
 
     // iOS Keychain keeps data stored by the app even if the user removed the app.
     // This can cause undesired behavior where the user gets old data, even after
@@ -33,16 +34,20 @@ class LocalStorageDataSource {
     }
   }
 
-  Future<String?> read(StorageKey key) async => secureStorage.read(key: key.name);
+  Future<String?> read(StorageKey key) async =>
+      secureStorage.read(key: key.name);
 
   Future<Map<StorageKey, String>> readAll() async {
     final data = await secureStorage.readAll();
-    return data.map((key, value) => MapEntry(StorageKey.values.byName(key), value));
+    return data
+        .map((key, value) => MapEntry(StorageKey.values.byName(key), value));
   }
 
-  Future<void> write({required StorageKey key, required String value}) async => secureStorage.write(key: key.name, value: value);
+  Future<void> write({required StorageKey key, required String value}) async =>
+      secureStorage.write(key: key.name, value: value);
 
-  Future<void> delete(StorageKey key) async => secureStorage.delete(key: key.name);
+  Future<void> delete(StorageKey key) async =>
+      secureStorage.delete(key: key.name);
 
   Future<void> deleteAll() async => secureStorage.deleteAll();
 }
